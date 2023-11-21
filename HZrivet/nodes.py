@@ -5,7 +5,7 @@
 # Compiled at: 2011-03-20 11:35:28
 """
 file -> file:node.py
-funtions -> 
+funtions ->
 
 ++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++
@@ -16,7 +16,7 @@ contact me:
         http://qeeji.weebly.com/(personal website)
         qeejihz@gmail.com
         qeeji@hotmaol.com
-        
+
 All Rights Reserved
 """
 import maya.cmds as cmd

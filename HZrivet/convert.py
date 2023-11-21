@@ -116,12 +116,12 @@ def getFromMaya(uN, vN):
                                 final.append((shape + '.worldMesh[0]', (each[0], each[1], perIndex[0], perIndex[1])))
 
                     else:
-                        print shape + 'is out of HZrivet basic object\n'
+                        print(shape + 'is out of HZrivet basic object\n')
 
                 i += 1
             else:
                 i += 1
-                print sels[i] + 'is out of HZrivet basic object\n'
+                print(sels[i] + 'is out of HZrivet basic object\n')
         elif cmd.nodeType(sels[i]) == 'nurbsSurface':
             if '.' in sels[i]:
                 if '.u[' in sels[i]:
@@ -145,7 +145,7 @@ def getFromMaya(uN, vN):
                     i += 1
                 else:
                     i += 1
-                    print sels[i] + 'is out of HZrivet basic object\n'
+                    print(sels[i] + 'is out of HZrivet basic object\n')
             else:
                 gets = calculation(uN, vN)
                 for each in gets:
@@ -172,7 +172,7 @@ def getFromMaya(uN, vN):
 
                         i += 2
                     else:
-                        print '"' + sels[i] + '" to "' + sels[(i + 1)] + '" you need select double mesh edges in order,or this scrip can\'t find out what you need'
+                        print('"' + sels[i] + '" to "' + sels[(i + 1)] + '" you need select double mesh edges in order,or this scrip can\'t find out what you need')
                         i += 1
                 elif 'vtx[' in sels[i]:
                     indexes = vetexToEdgeIndexes(sels[i])
@@ -180,7 +180,7 @@ def getFromMaya(uN, vN):
                     i += 1
                 else:
                     i += 1
-                    print sels[i] + 'is out of HZrivet basic object\n'
+                    print(sels[i] + 'is out of HZrivet basic object\n')
             else:
                 allIndexes = meshToPerFace(sels[i])
                 gets = calculation(uN, vN)
@@ -191,6 +191,6 @@ def getFromMaya(uN, vN):
                 i += 1
         else:
             i += 1
-            print sels[i] + 'is out of HZrivet basic object\n'
+            print(sels[i] + 'is out of HZrivet basic object\n')
 
     return final

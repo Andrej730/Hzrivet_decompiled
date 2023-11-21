@@ -6,4 +6,27 @@
 
 
 def __doc__():
-    print "\nHZrivet V1.0\nhierarchy :|HZrivet\n\tprocedures files:\n\t\tUI.py\n\t\tnodes.py\n\t\tconvert.py\n\t\t\nUpdated :\t20110106(create)\n\n\nAuthor :\tJohn Huangzhen\t\t\t\t\t\t\t\ncontact:    qeejihz@gmail.com\n\t\t\thttp://qeeji.weebly.com/\n\nDescription :\t\t\t\t\t\t\t\t\t\n\tsmart way to create rivet object base on :transform with mesh node nurbsSurface node ,and componenets\t\n\t\nHow to use :\t\t\t\t\t\t\t\t\t\n     python command in maya: <start>import HZrivet.UI;HZrivet.UI.UI()<end>\nbug: can't create rivet correct when you select more than 2 poly edges\n\nAll Rights Reserved.\n"
+    print("""
+HZrivet V1.0
+hierarchy :|HZrivet
+    procedures files:
+      UI.py
+      nodes.py
+      convert.py
+
+Updated :   20110106(create)
+
+
+Author :    John Huangzhen
+contact:    qeejihz@gmail.com
+          http://qeeji.weebly.com/
+
+Description :
+    smart way to create rivet object base on :transform with mesh node nurbsSurface node ,and componenets
+
+How to use :
+     python command in maya: <start>import HZrivet.UI;HZrivet.UI.UI()<end>
+bug: can't create rivet correct when you select more than 2 poly edges
+
+All Rights Reserved.
+    """)
